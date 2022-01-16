@@ -5,42 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
+    
 
-    <ul>
-        <li>
-            <a href="index.html"> Home </a>
-        </li>
-        <li>
-            <a href="contato.html"> Contato </a>
-        </li>
-    </ul>
+        <ul class="menu">
+            <li class="links">
+                <a href="index.html" class = "links">Home</a>
+            </li>
+            <li class="links">
+                <a href="contato.html" class = "links">Contato</a>
+            </li>
+      </ul>
+
+    
 
     <h1>Entre em contato comigo</h1>
 
     <form>
-      <label for="nome">Nome:</label> <br>
-      <input type="text"id="nome">
-      <br>
-      <br>
-      <label for="email">Email:</label> <br>
-      <input type="text"id="email">
-      <br>
-      <br>
-      <label for="assunto">Assunto:</label> <br>
-      <textarea name="" id="" cols="50" rows="5"></textarea>
-      <br>
-      <br>
+
+          <div class= "campo">
+            <label for="nome">Nome:</label> 
+            <input type="text"id="nome" onkeyup="validaNome">
+              </div>
+        
+          <div class="campo" >
+            <label for="email">Email:</label> 
+            <input type="text"id="email">
+              </div>
+         
+          <div class="campo" >
+            <label for="assunto">Assunto:</label> 
+            <textarea name="assunto" id="assunto" cols="50" rows="5"></textarea>
+          </div>
+            
       <button>Enviar</button>
+       
+
+      
     </form>
+      
 
     <h2>Endereço:</h2>
 
-    <p>Rua Vênus de Milo, 36</p>
+    <p>Av. Paulista, 2100 - Bela Vista</p>
     <p>São Paulo - SP</p>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.349650790203!2d-46.423969185385886!3d-23.48391226462103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce63c877f9cd2d%3A0xe0af313b18c0442f!2sR.%20V%C3%AAnus%20de%20Milo%2C%2036%20-%20Jardim%20Helena%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008081-140!5e0!3m2!1spt-BR!2sbr!4v1641829444718!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.284192286803!2d-46.662064385383985!3d-23.558234567361133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5925aabe9447%3A0x4b5b586710611030!2sAv.%20Paulista%2C%202100%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-200!5e0!3m2!1spt-BR!2sbr!4v1641840016277!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+  <script src="./assets/js/script.js"></script>
 
 </body>
 </html>
